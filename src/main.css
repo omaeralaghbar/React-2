@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.step {
+    background: white;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 3rem auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide {
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 90%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    font-size: 1rem;
+    margin:12px;
+}
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #00796b;
+        outline: none;
+    }
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    margin:5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+    button:hover {
+        background-color: #004d40;
+    }
+
+/* Progress Bar */
+.progress-bar {
+    height: 12px;
+    background-color: #c8e6c9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #2e7d32;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Confirmation Table */
+.confirmation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+    .confirmation-table td {
+        padding: 0.8rem;
+        border-bottom: 1px solid #ddd;
+        font-size: 1rem;
+    }
